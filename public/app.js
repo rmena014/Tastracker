@@ -38,8 +38,10 @@ const Task = class {
   showTasks(taskList) {
     //Utilized forEach because we want to loop through each taskList
     taskList.forEach((task) => {
+      //clone the template for each instance
       const template = $(".task-template").contents().clone();
       template.find(".text").text(task.text);
+      //.attr retyrbs attributes of the selected element
       template.attr("data-id", task.id);
       console.log(template.get());
       if (task.checked) {

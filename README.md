@@ -10,3 +10,17 @@ On my app.js file, I first declared a class named Task. My thought process for t
 # Difficulties and errors I had to solve
 
 Without a doubt one of the issues I had was actually trying to get the addtask and deleteTask functions to work. I spent days attempting to find fixes to work. I eventually began to research more into api calls, and the fetch method. Prior to this I was just coding the functions without actually fetching the routes from the backend. A resource that truly helped me come to this conclusion was https://devhints.io/js-fetch. This resource is a fetch() cheatsheet with valuable information on how its formatted and the response and request options. However, while my delete task did begin to work, it was deleting all the tasks all at once. This issue also became a huge pain since I had to again extensively research ways to remove specific objects in a json file. While doing research on this, I came across a module name UUID which stands for universally unique identifier. I needed to import this package and implement it into my delete tasks function so that only tasks with that specific id get deleted. Since each id is unique only one tasks would get deleted and that is how I overcame that error. Lastly, a big error I was having was with my toggleDone function. At first I was under the impression that using the put method and making a seperate object marking that it was done. Instead I began to research the patch request method. This method basically allows you to partially modify a resource. In my eyes it was basically a way to update an object. As a result I implemented a patch route on my back end and fetched it on my toggleDone task. I then created a property for each json object that will create a true or false if it is completed or not.
+
+# Resources Used
+
+https://expressjs.com/en/guide/routing.html#route-parameters
+
+https://expressjs.com/en/api.html#req.params
+
+https://devhints.io/js-fetch
+
+https://expressjs.com/en/api.html#app.listen
+
+https://expressjs.com/en/starter/static-files.html#serving-static-files-in-express
+
+https://api.jquery.com/
