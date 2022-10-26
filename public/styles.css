@@ -112,8 +112,7 @@ form {
   background: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
   color: white;
   box-sizing: border-box;
-  font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui,
-    -apple-system;
+
   font-weight: normal;
   text-align: center;
 }
