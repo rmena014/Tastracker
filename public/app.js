@@ -1,6 +1,6 @@
 //JQUERY Symbols: $ is a selector for jQuery or another way of saying document.getElementById()
 
-/*Class always contains a constructor */
+/*Class always contains a constructor, class is a template for creating objects */
 const Task = class {
   /*This constructor will be executed when a new instance is created. */
   constructor() {
